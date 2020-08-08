@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: italic;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-CONDIT.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+
+    --text-orange-color: #ffc600;
+    --link-orangle-color: #ffc600;
+    --global-black: #000e16;
+    --gray: #717171;
+    
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-orangle-color);
+}
+
+.colored {
+    color: var(--text-orange-color);
+}
+
+.link:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--link-orangle-color);
+}
+
+.first-colored::first-letter {
+    color: var(--text-orange-color);
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.bold {
+    font-size: 200px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.header {
+    color: white;
+    height: 1080px;
+}
+
+.header .text {
+    max-width: 380px;
+    margin: 0 auto 32px 0;    
+}
+
+.header .container {
+    background-color: transparent;
+    align-items: flex-start;
+}
+
+.header .wrapper {
+    max-width: 100%;
+    margin-left: 32px;
+}
+
+.bold {
+    margin: 0;
+}
+
+.header-bottom {
+    margin-top: 5%;
+    height: 100%;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.header-bottom .bold {
+    font-size: 60px;
+}
+
+.header-bottom .nav {
+    margin-top: 3%;
+    justify-content: space-between;
+    width: 30%;
+}
+
+/*******************************************************************/
+
+.about-header {
+    margin-top: 64px;
+    justify-content: space-between;
+}
+
+.about .about-header div {
+    max-width: 600px;
+    color: black;
+}
+
+.about .bold {
+    font-size: 60px;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.about .caption {
+    align-items: flex-start;
+    justify-content: center;
+    height: 84px;
+}
+
+.about .semibold {
+    position: relative;
+    top: 24px;
+    margin: 0;
+    color: var(--gray);
+    font-size: 32px;
+}
+
+.first-bold::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.about .about-header .text {
+    padding-left: 16px;
+    border-left: solid black 1px;
+    margin-right: 0px;
+    color: var(--gray);
+}
+
+.about-header .italic {
+    color: black;
+}
+
+.about-products {
+    margin: 64px auto 128px auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about .product-title {
+    margin-bottom: 0;
+}
+
+.about .product-desc {
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.about .product {
+    max-width: 256px;
+}
+
+/*******************************************************************/
+
+.projects .container{
+    height: 120px;
+    background-color: lightseagreen;
+}
