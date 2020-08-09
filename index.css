@@ -92,8 +92,10 @@ body {
     margin: 0;
 }
 
-.dual-text > span {
+.dual-text > * {
     display: block;
+    margin: 0;
+    font-size: 1em;
 }
 
 .header {
@@ -122,7 +124,11 @@ body {
     font-size: 60px;
 }
 
-.header .dual-text .second{
+.header-bottom .dual-text {
+    font-size: 60px;
+}
+
+.header .dual-text .second {
     margin-top: -28px;
 }
 
@@ -215,6 +221,7 @@ body {
 }
 
 .about .product-title {
+    font-size: 22px;
     margin-bottom: 0;
 }
 
