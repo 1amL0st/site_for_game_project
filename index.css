@@ -300,8 +300,33 @@ body {
 
 .process-article {
     text-align: left;
-    width: 50%;
     align-items: flex-start;
+    margin-left: 32px;
+}
+
+.processes-grid {
+    margin: 32px auto 64px auto;
+    width: 100%;
+    max-width: 860px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: 
+        "a b"
+        "c d"
+        "f g";
+}
+
+.method {
+    grid-area: c;
+}
+
+.method-img {
+    grid-area: d;
+}
+
+.method.process-article {
+    margin: auto 16px auto 0;
 }
 
 .wrapper.row.method {
@@ -324,4 +349,12 @@ body {
 
 .process-article .article {
     margin-top: 24px;
+}
+
+/*******************************************************************/
+
+.service .container {
+    width: 128px;
+    height: 128px;
+    background-color: red;
 }
