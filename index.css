@@ -127,9 +127,24 @@ body {
     width: 30%;
 }
 
+.header .wrapper {
+    padding: 5% 0 0 5%;
+    width: 95%;
+    height: 95%;
+}
+
 /*******************************************************************/
 
-.about-header {
+.about > .container {
+    align-items: flex-start;
+}
+
+.about > .container > * {
+    margin-left: 8%;
+}
+
+.about .about-header {
+    width: 92%;
     margin-top: 64px;
     justify-content: space-between;
 }
@@ -151,10 +166,6 @@ body {
     align-items: flex-start;
     justify-content: center;
     height: 84px;
-}
-
-.about .caption {
-    margin-left: 15%;
 }
 
 .about .semibold {
