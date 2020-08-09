@@ -106,11 +106,6 @@ body {
     align-items: flex-start;
 }
 
-.header .wrapper {
-    max-width: 100%;
-    margin-left: 32px;
-}
-
 .bold {
     margin: 0;
 }
@@ -158,6 +153,10 @@ body {
     height: 84px;
 }
 
+.about .caption {
+    margin-left: 15%;
+}
+
 .about .semibold {
     position: relative;
     top: 24px;
@@ -189,7 +188,7 @@ body {
 .about-products {
     margin: 64px auto 128px auto;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
 }
 
 .about .product-title {
@@ -199,6 +198,7 @@ body {
 .about .product-desc {
     margin-top: 16px;
     font-size: 12px;
+    text-align: center;
 }
 
 .about .product {
