@@ -397,3 +397,38 @@ body {
     grid-template-rows: repeat(2, max-content);
     column-gap: 20%;
 }
+
+/*******************************************************************/
+
+.our-team .wrapper {
+    justify-content: space-between;
+    width: 90%;
+    margin: 64px auto 128px auto;
+}
+
+.team-members {
+    margin-top: 32px;
+    justify-content: start;
+}
+
+.our-team .title {
+    align-self: flex-start;
+}
+
+.team-member {
+    margin: 0;
+}
+
+.team-member .dual-text {
+    text-align: center;
+}
+
+.team-member .second {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.our-team .content {
+    align-items: flex-start;
+}
