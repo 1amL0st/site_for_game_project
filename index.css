@@ -194,6 +194,7 @@ body {
 
 .italic {
     font-style: italic;
+    font-weight: normal;
 }
 
 .about-header .dual-text {
@@ -244,8 +245,21 @@ body {
     margin-left: 5%;
     font-weight: 600;
 }
+.second {
+    position: relative;
+}
+.underline::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--gray);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
 
 .title {
+    position: relative;
     font-size: 40px;
 }
 
@@ -348,7 +362,7 @@ body {
 }
 
 .process-article .article {
-    margin-top: 24px;
+    margin-top: 18px;
 }
 
 /*******************************************************************/
@@ -373,6 +387,10 @@ body {
 .services .container {
     padding: 5% 0 2% 0;
     position: relative;
+}
+
+.services .underline::after {
+    background-color: white;
 }
 
 .services .product-title, .product-desc {
@@ -416,7 +434,7 @@ body {
 }
 
 .team-member {
-    margin: 0;
+    margin: 0 16px 0 0;
 }
 
 .team-member .dual-text {
@@ -437,6 +455,11 @@ body {
 
 .test *{
     color: white;
+}
+
+.test .first.underline::after {
+    width: 50%;
+    right: 0;
 }
 
 .test .container {
@@ -570,10 +593,11 @@ body {
 
 .contacts input[type="submit"] {
     font-weight: bold;
-    background-color: yellow;
+    background-color: var(--text-orange-color);
     font-size: 18px;
     width: 128px;
     height: 32px;
+    border: none;
 }
 
 .location {
@@ -652,12 +676,22 @@ body {
 }
 
 .footer .nav .link {
+    text-transform: uppercase;
     margin-bottom: 16px;
     color: white;
 }
 
+.footer .nav .link:hover {
+    text-decoration: none;
+    color: var(--link-orangle-color);
+}
+
 .socials .link {
     margin-left: 4px;
+}
+
+.socials .list {
+    margin-left: 16px;
 }
 
 .footer .socials hr {

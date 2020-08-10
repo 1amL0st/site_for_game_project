@@ -11,7 +11,7 @@
 
     <body>
 
-        <header class="header section column">
+        <header id="home" class="header section column">
             <img class="bg-image" alt="#" src="images/header/bg.png">
 
             <div class="header-top container column">
@@ -42,7 +42,7 @@
         </header>
 
         <main>
-            <section class="about section column">
+            <section id="about-sublime" class="about section column">
                 <div class="container column">
 
                 <header class="about-header container row">
@@ -101,12 +101,12 @@
                 </div>
             </section>
 
-            <section class="projects section">
+            <section id="projects" class="projects section">
                 <div class="container column">
                     <header class="projects-header">
                         <div class="dual-text title">
                             <h2 class="first first-colored">Featured</h2>
-                            <h2 class="second">Projects</h2>
+                            <h2 class="second underline">Projects</h2>
                         </div>
 
                         <nav class="projects-nav row">
@@ -152,7 +152,7 @@
                         <div class="process-article column">
                             <div class="dual-text title">
                                 <h2 class="first first-colored">Strategic</h2>
-                                <h2 class="second">Process</h2>
+                                <h2 class="second underline">Process</h2>
                             </div>
                             <article class="dual-text article">
                                 <h3 class="first italic">
@@ -208,14 +208,14 @@
                 </div>
             </section>
 
-            <section class="services section">
+            <section id="services" class="services section">
                 <div class="container">
                     <img class="bg-image" alt="" src="images/services/bg.png">
 
                     <div class="wrapper row">
                         <div class="dual-text title">
                             <h2 class="first first-colored">Services</h2>
-                            <h2 class="second">Provided</h2>
+                            <h2 class="second underline">Provided</h2>
                         </div>
                 
                         <div class="grid">
@@ -259,12 +259,12 @@
                 </div>
             </section>
 
-            <section class="our-team section">
+            <section id="team" class="our-team section">
                 <div class="container row">
                     <div class="wrapper row">
                         <div class="dual-text title">
                             <h2 class="first first-colored">Our</h2>
-                            <h2 class="second">Team</h2>
+                            <h2 class="second underline">Team</h2>
                         </div>
 
                         <div class="content column">
@@ -320,11 +320,11 @@
                 </div>
             </section>
 
-            <section class="test section">
+            <section id="testimonials" class="test section">
                 <div class="container row">
                     <div class="wrapper column">
                         <div class="dual-text title">
-                            <h2 class="first first-colored">Testimonials</h2>
+                            <h2 class="first first-colored underline">Testimonials</h2>
                         </div>
 
                         <div class="content row">
@@ -348,12 +348,12 @@
                 </div>
             </section>
 
-            <section class="blogs section">
+            <section id="blogs" class="blogs section">
                 <div class="container row">
                     <div class="wrapper row">
                         <div class="blog-list">
                             <div class="dual-text title">
-                                <h2 class="first first-colored">Blogs</h2>
+                                <h2 class="first first-colored underline">Blogs</h2>
                             </div>
                             <div class="link-list column">
                                 <a class="link" href="">Latest Posts</a>
@@ -407,7 +407,7 @@
                 </div>
             </section>
 
-            <section class="contacts section">
+            <section id="contacts" class="contacts section">
                 <div class="container row">
                     <div class="map"></div>
 
@@ -445,12 +445,12 @@
 
                         <div class="socials">
                             <hr>
-                            <a class="link" href=""><img class="icon" alt="" src="images/facebook.png"></a>
-                            <a class="link" href=""><img class="icon" alt="" src="images/instagram.png"></a>
-                            <a class="link" href=""><img class="icon" alt="" src="images/twitter.png"></a>
+                            <div class="list">
+                                <a class="link" href=""><img class="icon" alt="" src="images/facebook.png"></a>
+                                <a class="link" href=""><img class="icon" alt="" src="images/instagram.png"></a>
+                                <a class="link" href=""><img class="icon" alt="" src="images/twitter.png"></a>
+                            </div>
                         </div>
-
-                        <!--Add the social networks contacts here-->
                     </div>
                 </div>
             </section>
@@ -463,22 +463,24 @@
                         <p class="bold first-colored">Sublime</p>
 
                         <nav class="nav column">
-                            <a class="link" href="">Home</a>
-                            <a class="link" href="">Abous sublime</a>
-                            <a class="link" href="">Our works</a>
-                            <a class="link" href="">Services</a>
-                            <a class="link" href="">Team</a>
-                            <a class="link" href="">Testimonials</a>
-                            <a class="link" href="">Blog</a>
-                            <a class="link" href="">Clients</a>
-                            <a class="link" href="">Contact us</a>
+                            <a class="link" href="#home">Home</a>
+                            <a class="link" href="#about-sublime">About sublime</a>
+                            <a class="link" href="#projects">Our works</a>
+                            <a class="link" href="#services">Services</a>
+                            <a class="link" href="#team">Team</a>
+                            <a class="link" href="#testimonials">Testimonials</a>
+                            <a class="link" href="#blogs">Blog</a>
+                            <a class="link" href="#">Clients</a>
+                            <a class="link" href="#contacts">Contact us</a>
                         </nav>
 
                         <div class="socials">
                             <hr>
-                            <a class="link" href=""><img class="icon" alt="" src="images/facebook.png"></a>
-                            <a class="link" href=""><img class="icon" alt="" src="images/instagram.png"></a>
-                            <a class="link" href=""><img class="icon" alt="" src="images/twitter.png"></a>
+                            <div class="list">
+                                <a class="link" href=""><img class="icon" alt="" src="images/facebook.png"></a>
+                                <a class="link" href=""><img class="icon" alt="" src="images/instagram.png"></a>
+                                <a class="link" href=""><img class="icon" alt="" src="images/twitter.png"></a>
+                            </div>
                         </div>
                     </aside>
                     
