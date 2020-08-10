@@ -513,3 +513,92 @@ body {
 .blog .second {
     margin-top: 16px;
 }
+
+/*******************************************************************/
+
+.contacts .container {
+    color: white;
+    background-color: #2046b3;
+}
+
+.contacts .map {
+    width: 40%;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.form-wrapper {
+    width: 50%;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+
+.contacts input[type="text"], textarea {
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    color: white;
+    border: solid 2px white;
+    background-color: transparent;    
+    height: 1.5em;
+    margin-bottom: 16px;
+}
+
+.contacts input[type="text"]::placeholder, textarea::placeholder {
+    color: white;
+}
+
+#user-name {
+    width: 100%;
+}
+
+.contacts .form {
+    margin-top: 16px;
+}
+
+.contacts .form .row {
+    justify-content: space-between;
+}
+
+#user-mobile, #user-email {
+    width: 45%;
+}
+
+#user-msg {
+    width: 100%;
+    height: 128px;
+}
+
+.contacts input[type="submit"] {
+    font-weight: bold;
+    background-color: yellow;
+    font-size: 18px;
+    width: 128px;
+    height: 32px;
+}
+
+.location {
+    align-items: flex-start;
+}
+
+.location * {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.location h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.field-name {
+    display: inline-block;
+    width: 128px;
+}
+
+/*******************************************************************/
+
