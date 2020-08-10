@@ -224,7 +224,7 @@ body {
     margin-bottom: 0;
 }
 
-.about .product-desc {
+.product-desc {
     margin-top: 16px;
     font-size: 12px;
     text-align: center;
@@ -353,8 +353,47 @@ body {
 
 /*******************************************************************/
 
-.service .container {
-    width: 128px;
-    height: 128px;
-    background-color: red;
+.services .wrapper {
+    margin: auto 5% auto 5%;
+    width: 90%;
+    background-color: transparent;
+    color: white;
+
+    justify-content: space-between;
+}
+
+.services .wrapper > * {
+    z-index: 2;
+}
+
+.services .bg-image {
+    z-index: 0;
+}
+
+.services .container {
+    padding: 5% 0 2% 0;
+    position: relative;
+}
+
+.services .product-title, .product-desc {
+    max-width: 224px;
+    text-align: left;
+}
+
+.services .product-title {
+    font-weight: normal;
+}
+
+.services .title {
+    align-self: flex-start;
+}
+
+.services .grid {
+    margin-right: 128px;
+    margin-top: 10%;
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, max-content);
+    column-gap: 20%;
 }
