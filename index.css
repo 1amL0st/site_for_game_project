@@ -17,16 +17,17 @@
     src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-SEMIBOLD.woff') format('woff');
 }
 
+:root {
+    --text-orange-color: #ffc600;
+    --link-orangle-color: #ffc600;
+    --global-black: #000e16;
+    --gray: #717171;    
+}
+
 body {
     margin: 0;
     font-family: 'Myriad Pro';
     font-size: 18px;
-
-    --text-orange-color: #ffc600;
-    --link-orangle-color: #ffc600;
-    --global-black: #000e16;
-    --gray: #717171;
-    
     background-color: rgba(0, 0, 0, 0.95);
 }
 
@@ -72,7 +73,7 @@ body {
     text-decoration-color: var(--link-orangle-color);
 }
 
-.first-colored::first-letter {
+.colored-l::first-letter {
     color: var(--text-orange-color);
 }
 
@@ -83,13 +84,6 @@ body {
     top: 0;
     left: 0;
     z-index: -3;
-}
-
-.bold {
-    font-size: 200px;
-    font-weight: bold;
-    margin-bottom: 0;
-    margin: 0;
 }
 
 .dual-text > * {
@@ -113,6 +107,13 @@ body {
     align-items: flex-start;
 }
 
+.header-top .dual-text .first {
+    margin: 0;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: bold;
+}
+
 .header-bottom {
     margin-top: 5%;
     height: 100%;
@@ -120,8 +121,12 @@ body {
     justify-content: flex-start;
 }
 
-.header-bottom .bold {
+.header-bottom .dual-text {
     font-size: 60px;
+}
+
+.header-bottom .dual-text .first {
+    font-style: normal;
 }
 
 .header-bottom .dual-text {
@@ -165,26 +170,31 @@ body {
     color: black;
 }
 
-.about .bold {
-    font-size: 60px;
-}
-
-.semibold {
-    font-weight: 600;
-}
-
 .about .caption {
     align-items: flex-start;
     justify-content: center;
     height: 84px;
+    font-size: 60px;
 }
 
-.about .semibold {
+.about .caption .first, .second {
+    margin: 0px;
+}
+
+.about .caption .first {
     position: relative;
     top: 24px;
     margin: 0;
     color: var(--gray);
-    font-size: 32px;
+    font-size: 48px;
+}
+
+.about .caption .second {
+    font-weight: bold;
+}
+
+.about .semibold {
+    
 }
 
 .first-bold::first-letter {
@@ -192,15 +202,22 @@ body {
     font-weight: bold;
 }
 
-.italic {
-    font-style: italic;
-    font-weight: normal;
-}
-
 .about-header .dual-text {
     padding-left: 16px;
     border-left: solid black 1px;
     margin-right: 0px;
+}
+
+.dual-text .first {
+    font-style: italic;
+}
+
+.dual-text.title .first {
+    font-style: normal;
+}
+
+.about-header .dual-text .first {
+    font-style: italic;
 }
 
 .article.dual-text {
@@ -220,7 +237,7 @@ body {
     width: 80%;
 }
 
-.about .product-title {
+.about-products .title {
     font-size: 22px;
     margin-bottom: 0;
 }
@@ -393,13 +410,18 @@ body {
     background-color: white;
 }
 
-.services .product-title, .product-desc {
+.services .title, .product-desc {
     max-width: 224px;
     text-align: left;
 }
 
-.services .product-title {
+.services .grid .title {
+    font-size: 18px;
     font-weight: normal;
+}
+
+.services .wrapper .title {
+    max-width: none;
 }
 
 .services .title {
@@ -521,6 +543,10 @@ body {
     justify-content: space-between;
 }
 
+.blogs .previews .blog .article {
+    font-size: 16px;
+}
+
 .blog {
     max-width: 180px;
 }
@@ -539,15 +565,22 @@ body {
 
 /*******************************************************************/
 
-.contacts .container {
-    color: white;
+.contacts > .container {
+    justify-content: flex-start;
     background-color: #2046b3;
+    height: 720px;
+    color: white;
 }
 
 .contacts .map {
     width: 40%;
     height: 100%;
     background-color: lightgray;
+}
+
+.contacts .map iframe {
+    width: 480px;
+    height: 720px;
 }
 
 .form-wrapper {
@@ -576,6 +609,10 @@ body {
 
 .contacts .form {
     margin-top: 16px;
+}
+
+.contacts .form .container {
+    background-color: transparent;
 }
 
 .contacts .form .row {
@@ -645,25 +682,30 @@ body {
     align-items: flex-start;
 }
 
+.footer .aside {
+    padding-top: 48px;
+    z-index: 1;
+}
+
+.footer .aside .colored-l {
+    font-size: 64px;
+    font-weight: bold;
+}
+
 .footer .logo {
     height: 100%;
     width: 100%;
     background-color: red;
 }
 
-.footer .aside {
-    padding-top: 128px;
-    z-index: 1;
-}
-
-.aside .bold {
-    font-size: 64px;
-}
-
-.logo .bold {
+.footer .logo .dual-text {
     margin: 356px 0 0 -128px;
     font-size: 90px;
     z-index: 3;
+}
+
+.logo .dual-text .first {
+    font-style: normal;
 }
 
 .footer .logo .bg-image {
